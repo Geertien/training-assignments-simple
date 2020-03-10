@@ -50,3 +50,5 @@ public class FlagFactory {
     // end::getFlag[]
 
 }
+
+public class Flag 
