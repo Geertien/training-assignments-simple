@@ -43,7 +43,7 @@ public class SavingsAccount {
         return (sum % 11 == 0)
     }
     
-    private Transfer makeTransfer(String counterAccount, Money amount){
+    private Transfer createTransfer(String counterAccount, Money amount){
         // 2. Look up counter account and make transfer object:
         CheckingAccount acct = Accounts.findAcctByNumber(counterAccount);
         return new Transfer(this, acct, amount); // <2>
